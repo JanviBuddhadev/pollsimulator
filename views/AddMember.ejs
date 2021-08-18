@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+  <h1>PollSimulator</h1>
+</head>
+<body class="container">
+
+<form method="POST" action="/SendRollNo">
+        <div class="jumbotron">
+            <label for="html" >Roll No.</label>
+            <input name="rollno" type="text">
+            <input name="submit" type="submit" >
+        </div>
+        <br>
+        <br>
+        <% if (locals.texterror) { %>
+
+          <label ><%=texterror%></label>
+         
+         <% } %>
+         
+
+
+        <li><a href="/adminside">Return to Admin Side</a> </li>
+</form>
+
+</body>
+</html>
